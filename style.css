@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serf;
+}
+#section1 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+#section1::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(#31ff38, #2196f3);
+    border-radius: 50%;
+    transform: translate(200px, -275px);
+}
+#section1::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(#e91e63,#ffc107);
+    border-radius: 50%;
+    transform: translate(-200px, 275px);
+}
+section {
+    position: relative;
+    background: #4a4a5c;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+section::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(#ffc107, #e91e63);
+    border-radius: 50%;
+    transform: translate(-250px, -120px);
+    z-index: 2;
+}
+section::after {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(#2196f3, #31ff38);
+    border-radius: 50%;
+    transform: translate(250px, 120px);
+}
+.box {
+    position: relative;
+    min-width: 350px;
+    min-height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: solid rgba(255, 255, 255, 0.5);
+    border-right: 1px rgba(255, 255, 255, 0.2);
+    border-bottom: 1px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    z-index: 10;
+    backdrop-filter: blur(20px);
+    padding: 1em;
+}
+.box img {
+    border-radius: 50%;
+    height: 150px;
+    border: 6px solid rgba(0, 0, 0, 0.5);
+    transform: translate(100px, -100px);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5);
+}
+.circle-border {
+    background-color: seashell;
+    height: 150px;
+}
+.content {
+    transform: translate(3px, -90px);
+}
+.content h3 {
+    color: #fff;
+    font-weight: 400;
+}
+#name {
+    font-weight: 600;
+    color: rgb(114, 189, 29);
+    margin-left: 0.9em;
+}
+#small {
+    font-weight: 400;
+    color: #1ee994;
+    font-size: 12pt;
+    margin-left: 1em;
+}
+#follow {
+    font-weight: 600;
+    color:rgb(135, 155, 197);
+    transform: translate(85px, 4px);
+}
+.wt-line {
+    background-color: #fff;
+    height: 2px;
+    margin-top: 5px;
+}
