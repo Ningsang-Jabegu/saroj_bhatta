@@ -157,26 +157,26 @@ i.fas.num {
     line-height: 1.5em;
     padding-top: 0;
 }
+
 i.fas:hover,.double-dot {
     color: rgb(255, 255, 255);
 }
-i.fa-facebook, .fa-instagram, .fa-tiktok, .fa-viber{
+.fa-facebook, .fa-instagram, .fa-tiktok, .fa-viber, .fa-whatsapp{
     height: 2.5em;
     width: 2.5em;
     color: rgb(117, 97, 97);
-    background: rgb(255, 255, 255);
-    
+    background: rgb(211, 211, 211);
     margin: 0 2em 0 0;
     border-radius: 50%;
     border: solid #fff .1em;
 }
-i.fa-instagram, .fa-tiktok, .fa-viber{
+i.fa-instagram, .fa-tiktok, .fa-viber, .fa-whatsapp{
     padding: .7em;
 }
 i.fa-facebook {
     padding: .8em;
 }
-i.fa-instagram:hover, .fa-tiktok:hover, .fa-facebook:hover {
+i.fa-instagram:hover, .fa-tiktok:hover, .fa-facebook:hover, .fa-whatsapp:hover {
     box-shadow: 4px 4px 8px #491ac956;
 }
 i.fa-viber:hover {
@@ -207,6 +207,13 @@ i.fa-tiktok:hover {
 }
 i.fa-instagram:hover {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    color: #fff;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+i.fa-whatsapp:hover {
+    background: linear-gradient(45deg, #e5ffcc, #1ebea5, #00e676, #edf8f5);
     color: #fff;
     cursor: pointer;
     justify-content: center;
