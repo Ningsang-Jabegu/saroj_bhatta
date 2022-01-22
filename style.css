@@ -103,16 +103,112 @@ section::after {
 #small {
     font-weight: 400;
     color: #1ee994;
-    font-size: 12pt;
+    font-size: 10pt;
+    padding: .3em;
     margin-left: 1em;
+}
+.double-dot{
+    margin-left: .5em;
+    color: rgb(155, 199, 154);
 }
 #follow {
     font-weight: 600;
-    color:rgb(135, 155, 197);
+    color:rgb(133, 153, 197);
     transform: translate(85px, 4px);
 }
+
 .wt-line {
     background-color: #fff;
     height: 2px;
     margin-top: 5px;
+}
+.social-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: relative;
+    min-width: relative;
+    margin-top: 1.5em;
+}
+i.fas {
+    position: relative;
+    display: flex;
+    width: auto;
+    height: 39px;
+    background: linear-gradient(150deg, #2f2f2f, #3f3f3f);
+    box-shadow: inset -8px 0 8px rgba(0,0,0,0015), inset 0 -8px 8px 
+    rgba(0, 0, 0, 0.15), 8px 5px 8px rgba(0, 0, 0, 0.4);
+    color: rgb(114, 94, 94);
+    padding-left: 0.35em;
+    padding-top: 0.50em;
+    margin: 0.5em;
+}
+i.fas:hover {
+    background: linear-gradient(150deg, #292626, #312c2c);
+    box-shadow: inset -8px 0 8px rgba(0,0,0,0015), inset 0 -8px 8px 
+    rgba(46, 46, 46, 0.15), 8px 5px 8px rgba(46, 46, 46, 0.4);
+    cursor: grab;
+    box-shadow: inset -8px 0 8px rgba(0,0,0,0015), inset 0 -8px 8px 
+    rgba(0, 0, 0, 0.15), 4px 5px 6px rgba(0, 0, 0, 0.4);
+}
+i.fas.num {
+    height: 65px;
+    line-height: 1.5em;
+    padding-top: 0;
+}
+i.fas:hover,.double-dot {
+    color: rgb(255, 255, 255);
+}
+i.fa-facebook, .fa-instagram, .fa-tiktok, .fa-viber{
+    height: 2.5em;
+    width: 2.5em;
+    color: rgb(117, 97, 97);
+    background: rgb(255, 255, 255);
+    
+    margin: 0 2em 0 0;
+    border-radius: 50%;
+    border: solid #fff .1em;
+}
+i.fa-instagram, .fa-tiktok, .fa-viber{
+    padding: .7em;
+}
+i.fa-facebook {
+    padding: .8em;
+}
+i.fa-instagram:hover, .fa-tiktok:hover, .fa-facebook:hover {
+    box-shadow: 4px 4px 8px #491ac956;
+}
+i.fa-viber:hover {
+    background: #7360f2;
+    color: #fff;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    
+}
+i.fa-facebook:hover {
+    background: hsla(214, 100%, 59%, 1);
+    color: #fff;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    
+}
+i.fa-tiktok:hover {
+    color: #fff;
+    background: rgb(22, 24, 35);
+    transition: color 250ms ease 0s;
+    text-decoration: none;
+    cursor: pointer;
+
+    justify-content: center;
+    align-items: center;
+}
+i.fa-instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    color: #fff;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
 }
