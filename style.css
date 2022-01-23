@@ -219,3 +219,7 @@ i.fa-whatsapp:hover {
     justify-content: center;
     align-items: center;
 }
+.email {
+    color: #1ee994;
+    text-decoration: none;
+}
