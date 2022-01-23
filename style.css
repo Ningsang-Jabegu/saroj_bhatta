@@ -14,6 +14,7 @@
     align-items: center;
     min-height: 100vh;
     min-width: 100vw;
+    overflow: inherit;
 }
 #section1::before {
     content: "";
@@ -32,6 +33,70 @@
     background: linear-gradient(#e91e63,#ffc107);
     border-radius: 50%;
     transform: translate(-200px, 275px);
+}
+body {
+    background: #4a4a5c;
+}
+
+.wrapper {
+    position: absolute;
+    visibility: hidden;
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    z-index: 20;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+.wrapper .menu {
+    padding: 10px 12px;
+}
+.right-click-content .item {
+    list-style: none;
+    font-size: 22px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 5px 0 10px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    width: 100%;
+    background: #f2f2f2;
+}
+.right-click-content .item:hover {
+    background: #f2f2f269;
+}
+.right-click-content .item span {
+    font-size: 19px;
+    margin-left: 8px;
+}
+.right-click-content .share {
+    position: relative;
+    justify-content: space-between;
+
+}
+.right-click-content .setting li{
+    display: flex;
+    padding: 5px 12px;
+    border-top: 1px solid #ccc;
+    margin-top: -5px;
+}
+.share .share-menu {
+    position: absolute;
+    background: #fff;
+    width: 200px;
+    right: -200px;
+    top: -20px;
+    border-radius: 10px;
+    padding: 13px;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+    transition: 0.2s ease;
+}
+.share:hover .share-menu {
+    opacity: 1;
+    pointer-events: auto;
 }
 section {
     position: relative;
@@ -161,7 +226,7 @@ i.fas.num {
 i.fas:hover,.double-dot {
     color: rgb(255, 255, 255);
 }
-.fa-facebook, .fa-instagram, .fa-tiktok, .fa-viber, .fa-whatsapp{
+.facebook, .instagram, .tiktok, .viber, .whatsapp{
     height: 2.5em;
     width: 2.5em;
     color: rgb(117, 97, 97);
@@ -170,16 +235,16 @@ i.fas:hover,.double-dot {
     border-radius: 50%;
     border: solid #fff .1em;
 }
-i.fa-instagram, .fa-tiktok, .fa-viber, .fa-whatsapp{
+i.instagram, .tiktok, .viber, .whatsapp{
     padding: .7em;
 }
-i.fa-facebook {
+i.facebook {
     padding: .8em;
 }
-i.fa-instagram:hover, .fa-tiktok:hover, .fa-facebook:hover, .fa-whatsapp:hover {
+i.instagram:hover, .tiktok:hover, .facebook:hover, .whatsapp:hover {
     box-shadow: 4px 4px 8px #491ac956;
 }
-i.fa-viber:hover {
+i.viber:hover {
     background: #7360f2;
     color: #fff;
     cursor: pointer;
@@ -187,7 +252,7 @@ i.fa-viber:hover {
     align-items: center;
     
 }
-i.fa-facebook:hover {
+i.facebook:hover {
     background: hsla(214, 100%, 59%, 1);
     color: #fff;
     cursor: pointer;
@@ -195,7 +260,7 @@ i.fa-facebook:hover {
     align-items: center;
     
 }
-i.fa-tiktok:hover {
+i.tiktok:hover {
     color: #fff;
     background: rgb(22, 24, 35);
     transition: color 250ms ease 0s;
@@ -205,14 +270,14 @@ i.fa-tiktok:hover {
     justify-content: center;
     align-items: center;
 }
-i.fa-instagram:hover {
+i.instagram:hover {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     color: #fff;
     cursor: pointer;
     justify-content: center;
     align-items: center;
 }
-i.fa-whatsapp:hover {
+i.whatsapp:hover {
     background: linear-gradient(45deg, #e5ffcc, #1ebea5, #00e676, #edf8f5);
     color: #fff;
     cursor: pointer;
@@ -222,4 +287,8 @@ i.fa-whatsapp:hover {
 .email {
     color: #1ee994;
     text-decoration: none;
+}
+li .item .fas {
+    margin: 0;
+    box-shadow: none;
 }

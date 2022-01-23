@@ -1,53 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sujan Bhatta | My Profile Page </title>
-    <link rel="icon" type="image/x-icon" href="/image/profile_picture.JPG">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/9735b9172e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <section>
-        
-        <!-- This section has the two background circle duplicated form section -->
-        <section id="section1"></section>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sujan Bhatta | My Profile Page </title>
 
-            <!-- From here begins the contain box that is blur box containing all the personal information -->
-            <div class="box">
+        <!-- This is the fav-icon -->
+        <link rel="icon" type="image/x-icon" href="/image/profile_picture.JPG">
 
-                <!-- To change the profile picture change this path to your image location -->
-                <img src="image/profile_picture.JPG" >
+        <!-- This is style sheet wich is connected to style.css file -->
+        <link rel="stylesheet" href="style.css">
 
-                <!-- This is the personal information section -->
-                <div class="content">
+        <!-- This linke is for icons used from font-awsome -->
+        <script src="https://kit.fontawesome.com/9735b9172e.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <!-- This section has custome left click -->
+        <div class="wrapper">
+            <div class="right-click-content">
+                <ul class="menu">
+                    <li class="item">
+                        <i class="fa fa-eye"></i>
+                        <span>preview</span>
+                    </li>
+                    <li class="item share">
+                        <div>
+                            <i class="fa fa-share"></i>
+                            <span>Share</span>
+                        </div>
+                        <i class="fa fa-angle-right"></i>
+                        <ul class="share-menu">
+                            <li class="item">
+                                <i class="fa fa-twitter"></i>
+                                <span>Twitter</span>
+                            </li>
+                            <li class="item">
+                                <i class="fa fa-instagram"></i>
+                                <span>instagram</span>
+                            </li>
+                            <li class="item">
+                                <i class="fa fa-facebook"></i>
+                                <span>facebook</span>
+                            </li>
+                            <li class="item">
+                                <i class="fa fa-viber"></i>
+                                <span>Viber</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <i class="fa fa-link"></i>
+                        <span>Get Link</span>
+                    </li>
+                    <li class="item">
+                        <i class="fa fa-edit"></i>
+                        <span>Rename</span>
+                    </li>
+                    <li class="item">
+                        <i class="far fa-trash-alt"></i>
+                        <span>Delete</span>
+                    </li>
+                    <div class="setting">
+                        <li class="item">
+                            <i class=" fa fa-cogs"></i>
+                            <span>Setting</span>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+            <!-- This section has the background color and two gradient circle -->
+            <section>
+                
+                <!-- This section has the two background circle duplicated form section -->
+                <section id="section1"></section>
+
+                <!-- From here begins the contain box that is blur box containing all the personal information -->
+                <div class="box">
+
+                    <!-- To change the profile picture change this path to your image location -->
+                    <img src="image/profile_picture.JPG" >
+
+                    <!-- This is the personal information section -->
+                    <div class="content">
                         <h3><i class="fas fa-signature"> <span class="double-dot">:</span><span id="name">Saroj Bhatta</span> </i></h3>
                         <h3><i class="fas num fa-mobile-alt"> &nbsp; &nbsp; <span class="double-dot">:</span><span id="small">+977-9818888706 (NCELL)<br>+977-9860855062 (NTC)</span></i></h3>
                         <h3><i class="fas fa-street-view">&nbsp;<span class="double-dot">:</span><span id="small"><a href="mailto:sarojbhatta4321@gmail.com" class="email">sarojbhatta4321@gmail.com</a></span></i></h3>
                         <h3><i class="fas fa-envelope-open-text">&nbsp;<span class="double-dot">:</span><span id="small">Koteshwor 32 Kathmandu</span></i></h3>
                         <h3><i class="fas fa-briefcase">&nbsp;<span class="double-dot">:</span><span id="small">Marketing</span></i></h3>
                         <h3><i class="fas fa-globe">&nbsp;<span class="double-dot">:</span><span id="small">sb.ningsangjabegu.com.np</span></i></h3>
-                        
+                                
                         <!-- This is the section for social media icons and link them into respective website -->
                         <h3 id="follow">Follow me on:</h3>
                         <div class="wt-line"></div>
                         <div class="social-icon">
-                            <a href="https://www.facebook.com/saroj.bhatta.547"><i class="fa fa-facebook"></i></a>
-                            <a href="https://www.tiktok.com/@bhattasaroj1"><i class="fa fa-tiktok"></i></a>
-                            <a href="https://www.instagram.com/saroj_bhatta_/"><i class="fa fa-instagram"></i></a>
-                            <a href="viber://chat/?number=%2B9779818888706"><i class="fa fa-viber"></i></a>
+                            <a href="https://www.facebook.com/saroj.bhatta.547"><i class="fa fa-facebook facebook"></i></a>
+                            <a href="https://www.tiktok.com/@bhattasaroj1"><i class="fa fa-tiktok tiktok"></i></a>
+                            <a href="https://www.instagram.com/saroj_bhatta_/"><i class="fa fa-instagram instagram"></i></a>
+                            <a href="viber://chat/?number=%2B9779818888706"><i class="fa fa-viber viber"></i></a>
                         </div>
 
                         <!-- This is to place other icon down -->
                         <div class="social-icon">
-                            <a href="https://www.facebook.com/saroj.bhatta.547"><i class="fa fa-whatsapp"></i></a>
+                            <a href="https://www.facebook.com/saroj.bhatta.547"><i class="fa fa-whatsapp whatsapp"></i></a>
                         </div>
+                    </div>
                 </div>
-            </div>
-        
-    </section>
-</body>
+
+            </section>
+    <script src="./site.js"></script>  
+    </body>
 </html>
