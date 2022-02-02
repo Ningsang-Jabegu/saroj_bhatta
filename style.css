@@ -441,3 +441,24 @@ footer p:nth-child(2) {
   color: #111;
   background: #f5f5f5;
 }
+.popup-login > div {
+  position: relative;
+  top: 10px;
+  opacity: 0;
+}
+.popup-login.active > div {
+  top: 0px;
+  opacity: 1;
+}
+.popup-login.active .icon {
+  transition: ease-in-out 250ms;
+}
+.popup-login.active .title {
+  transition: ease-in-out 300ms;
+}
+.popup-login.active .discription {
+  transition: ease-in-out 350ms;
+}
+.popup-login.active .dismiss-popup-button {
+  transition: ease-in-out 400ms;
+}
