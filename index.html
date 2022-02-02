@@ -16,6 +16,8 @@
         <script src="https://kit.fontawesome.com/9735b9172e.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+        <!-- For Google sign-in -->
+        
     </head>
     <body>
         <!-- This section has custome left click -->
@@ -122,16 +124,7 @@
                                 <h3><i class="fas fa-globe">&nbsp;<span class="double-dot">:</span><span id="small">sb.ningsangjabegu.com.np</span></i></h3>
                                 <span class="tooltiptext">&nbsp; If you haave any order you can &nbsp;<br> order from this website.&nbsp; </span>
                             </div>
-
-                            
-
-
-                        
-                        
-                        
-                        
-                        
-                                
+        
                         <!-- This is the section for social media icons and link them into respective website -->
                         <h3 id="follow">Follow me on:</h3>
                         <div class="wt-line"></div>
@@ -146,10 +139,36 @@
                         <div class="social-icon">
                             <a href="https://www.facebook.com/saroj.bhatta.547"><i class="fa fa-whatsapp whatsapp"></i></a>
                         </div>
+                        <a href="#" class="button-link"><button id="order-btn">Order Here</button></a>
                     </div>
                 </div>
 
             </section>
-    <script src="./site.js"></script>  
+            
+            <!-- From here popup for sign-in begins -->
+            <div class="popup-login center">
+                <div class="icon">
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="title">Please Login for Order</div>
+                <div class="discription">
+                    Here gooogle signin goes...
+                </div>
+                <div class="dismiss-btn">
+                    <button id="dismiss-popup-button">
+                        Dismiss
+                    </button>
+                </div>
+            </div>
+            <div class="center">
+                <button id="open-popup-btn">Open</button>
+            </div>
+
+            <footer>
+                <p>All right reserved by<span id="name">Saroj Bhatta</span> . </p>
+                <p>Design and developed by:<span id="name">Ningsang Jabegu</span></p>
+            </footer>
+    <script src="./site.js"></script>
+    <script src="./login.js"></script>  
     </body>
 </html>

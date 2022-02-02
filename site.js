@@ -1,3 +1,4 @@
+/* This java script is for right click only */
 const contextMenu = document.querySelector(".wrapper"),
 shareMenu = contextMenu.querySelector(".share-menu");
 
