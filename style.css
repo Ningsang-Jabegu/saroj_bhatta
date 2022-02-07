@@ -370,17 +370,17 @@ footer p:nth-child(2) {
     text-align: right;
     font-size: 9pt;
 }
-.center {
+/*.center {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .popup-login {
-  width: 350px;
-  height: 420px;
-  padding: 30px 20px;
-  background: #f5f5f5;
+  width: 370px;
+  height: fit-content;
+  padding: 15px 10px;
+  background: #a4a9b4;
   border-radius: 10px;
   box-sizing: border-box;
   z-index: 20;
@@ -410,7 +410,7 @@ footer p:nth-child(2) {
 }
 .popup-login .icon i.fa {
   font-size: 30px;
-  color: #34f234;
+  color: #213291;
 }
 .popup-login .title {
   margin: 5px 0px;
@@ -428,8 +428,8 @@ footer p:nth-child(2) {
 .popup-login .dismiss-btn button {
   padding: 10px 20px;
   color: #f5f5f5;
-  background: #111;
-  border: 2px solid #111;
+  background: #213291;
+  border: 2px solid #213291;
   font-size: 16px;
   font-weight: 600;
   outline: none;
@@ -438,6 +438,178 @@ footer p:nth-child(2) {
   transition: all 300ms ease-in-out;
 }
 .popup-login .dismiss-btn button:hover {
-  color: #111;
-  background: #f5f5f5;
+  color: #213291;
+  background: #a4a9b4;
+}
+.popup-login > div {
+  position: relative;
+  top: 10px;
+  opacity: 0;
+}
+.popup-login.active > div {
+  top: 0px;
+  opacity: 1;
+}
+.popup-login.active .icon {
+  transition: ease-in-out 250ms;
+}
+.popup-login.active .title {
+  transition: ease-in-out 300ms;
+  background: hsl(231, 63%, 35%);
+  color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.popup-login.active .discription {
+  transition: ease-in-out 350ms;
+}
+.popup-login.active .dismiss-popup-button {
+  transition: ease-in-out 400ms;
+}
+.popup-login.active .discription p:first-child {
+  color: rgb(28, 34, 116);
+  font-weight: 500;
+}*/
+/* This is login form *
+/* Full-width input fields */
+input[type=text], input[type=tel], .countryCode1{
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type=text]  {
+  width: 100%;
+}
+select [type=countryCode] {
+  width: 10%;
+  padding: 0;
+}
+input[type=tel] {
+  width: 100%;
+}
+#country-code {
+  display: flex;
+}
+.countryCode1 {
+  width: 50%;
+  padding: 0 -3px 0 -3px;
+}
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.tel {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 20; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw-otp {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+/*This is for otp section*/
+span.psw-otp {
+  font-weight: 500;
+  float: right;
+  padding-right: 10px;
 }
